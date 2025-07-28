@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whatsapp Extension</title>
+    <style>
+        .btn {
+            width: 75px;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            font-size: 5;
+        }
+
+        body {
+            background-color: darkslategray;
+            width: 220px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        h3 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<h3>Upload Image</h3>
+<form>
+    <input type="file" id="image">
+    <input type="text" id="link" placeholder="link to image">
+
+    <div>
+        <input type="submit" class="btn" id="submitbutton" value="Submit">
+        <button type="button" class="btn" id="clearbutton">Clear</button>
+    </div>
+
+    <div>
+        <button type="submit" class="btn" id="cover">Cover</button>
+        <button type="submit" class="btn" id="contain">Contain</button>
+    </div>
+</form>
+
+<script src="background.js"></script>
+</body>
+</html>
